@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    let umur = parseInt(prompt("Masukkan umur kamu: ")) //  Tambah parseInt biar umur jadi angka, bukan string
+
+if (umur < 18) {
+  console.log("Kamu remaja")
+} else if (umur >= 18 && umur < 60) { //  Gunakan >= supaya umur 18 masuk kategori dewasa
+  console.log("Kamu dewasa")
+} else { //  Tambahkan } yang hilang sebelumnya
+  console.log("Kamu lansia")
+}
+  </script>
+</body>
+
+</html>
