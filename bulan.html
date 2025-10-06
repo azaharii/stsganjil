@@ -1,28 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Cek Jumlah Hari Bulan</title>
-</head>
-<body>
-  <script>
-    let bulan = prompt("Masukkan nama bulan");
-    bulan = bulan.toLowerCase();
-    let hasil = "";
-
-    if (bulan == "januari" || bulan == "maret" || bulan == "mei" || 
-        bulan == "juli" || bulan == "agustus" || bulan == "oktober" || 
-        bulan == "desember") {
-      hasil = "Bulan ini memiliki 31 hari";
-    } else if (bulan == "februari") {
-      hasil = "Bulan ini memiliki 28 atau 29 hari";
-    } else if (bulan == "april" || bulan == "juni" || 
-               bulan == "september" || bulan == "november") {
-      hasil = "Bulan ini memiliki 30 hari";
-    } else {
-      hasil = "Nama bulan tidak valid";
-    }
-
-    alert(hasil);
-  </script>
-</body>
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Cek Jumlah Hari Bulan</title>  
+</head>  
+<body>  
+  <script>  
+    // Meminta input dari pengguna berupa nama bulan
+    let bulan = prompt("Masukkan nama bulan");  
+    
+    // Mengubah input menjadi huruf kecil agar lebih mudah dibandingkan
+    bulan = bulan.toLowerCase();  
+    
+    // Variabel untuk menyimpan hasil jumlah hari
+    let hasil = "";  
+  
+    // Mengecek apakah bulan termasuk yang punya 31 hari
+    if (bulan == "januari" || bulan == "maret" || bulan == "mei" ||   
+        bulan == "juli" || bulan == "agustus" || bulan == "oktober" ||   
+        bulan == "desember") {  
+      hasil = "Bulan ini memiliki 31 hari";  
+    
+    // Mengecek apakah bulan adalah Februari (khusus, 28 atau 29 hari)
+    } else if (bulan == "februari") {  
+      hasil = "Bulan ini memiliki 28 atau 29 hari";  
+    
+    // Mengecek apakah bulan termasuk yang punya 30 hari
+    } else if (bulan == "april" || bulan == "juni" ||   
+               bulan == "september" || bulan == "november") {  
+      hasil = "Bulan ini memiliki 30 hari";  
+    
+    // Jika input tidak sesuai nama bulan, akan dianggap tidak valid
+    } else {  
+      hasil = "Nama bulan tidak valid";  
+    }  
+  
+    // Menampilkan hasil menggunakan alert
+    alert(hasil);  
+  </script>  
+</body>  
 </html>
